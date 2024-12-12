@@ -1,0 +1,150 @@
+:root {
+    --primary-color: rgba(0, 128, 0, 0.80);
+    --primary-light: rgba(0, 128, 0, 0.15);
+    --primary-bg: rgb(227, 248, 223);
+    --glass-bg: rgba(255, 255, 255, 0.2);
+    --glass-border: rgba(255, 255, 255, 0.3);
+    --glass-shadow: rgba(31, 38, 135, 0.37);
+    --text-dark: rgba(0, 0, 0, 0.8);
+    --text-green: rgb(0, 128, 0);
+    --transition-fast: 0.2s ease-out;
+}
+
+/* Reset and base styles */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*** About Start ***/
+.about-us-container {
+    background-color: var(--primary-bg);
+    width: 800px;
+}
+
+.custom-img-container img {
+    object-fit: cover;
+}
+
+/* Navigation Tabs Hover Effects */
+.about-us-container .nav-item a {
+    position: relative;
+    transition: all var(--transition-fast);
+    overflow: hidden;
+    border: 1px solid transparent;
+}
+
+.about-us-container .nav-item a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width var(--transition-fast);
+}
+
+.about-us-container .nav-item a:hover {
+    background-color: var(--primary-light) !important;
+    color: var(--text-green) !important;
+}
+
+.about-us-container .nav-item a:hover::before {
+    width: 100%;
+}
+
+.about-us-container .nav-item a.active {
+    background-color: var(--primary-light) !important;
+    color: var(--text-green) !important;
+}
+
+.about-us-container .nav-item a.active::before {
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+/* Subtle shadow and lift effect on hover */
+.about-us-container .nav-item a:hover {
+    box-shadow: 0 4px 6px rgba(0, 128, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.centered-content {
+    text-align: center; /* Centers all content horizontally */
+    font-size: 18px; /* Sets an appropriate font size */
+    font-weight: 500;
+    line-height: 1.8; /* Adds spacing between lines for readability */
+    margin: 20px auto; /* Centers the container and adds spacing */
+    max-width: 800px; /* Limits the width for better presentation */
+    color: #333; /* Sets a dark text color */
+}
+
+
+.centered-content strong {
+    font-size: 20px; /* Emphasizes the titles */
+    font-weight: 600; /* Makes the titles bold */
+    color: #2a7c2a; /* Adds a green color to match the theme */
+}
+
+.government-employees .card {
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.government-employees .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.government-employees .card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.government-employees .row {
+    margin-bottom: 30px;
+}
+
+/* Enable dropdown on hover */
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Adjust spacing if needed */
+}
+
+/* Smooth hover effect */
+.navbar .dropdown:hover > .nav-link {
+    color: var(--primary-color); /* Optional: Highlight the link on hover */
+    text-decoration: none;
+}
+
+#development-agenda {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+#development-agenda h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+#development-agenda .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#development-agenda .card-title {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+#development-agenda .card-text {
+    font-size: 1rem;
+    color: #555;
+}
+

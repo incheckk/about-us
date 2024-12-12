@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="about-us.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <!-- Logo and brand -->
+                <a href="#" class="navbar-brand">
+                    <img src="assets/icons/bogo-city-icon.png" alt="Bogo City Logo" width="33" height="33"> <span
+                        style="color: green; font-weight: bold;">City of Bogo</span>
+                </a>
+
+                <!-- Mobile toggle button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navMenu"
+                    aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navigation menu -->
+                <div class="offcanvas offcanvas-end" id="navMenu" tabindex="-1">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">City of Bogo</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto gap-3">
+                            <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="aboutUsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    About Us
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="aboutUsDropdown" style="background-color: var(--primary-bg); border: 1px solid var(--primary-color);">
+                                    <li><a class="dropdown-item" href="about-us.html" style="color: var(--text-dark);">Our History</a></li>
+                                    <li><a class="dropdown-item" href="#vision" style="color: var(--text-dark);">Vision</a></li>
+                                    <li><a class="dropdown-item" href="#mission" style="color: var(--text-dark);">Mission</a></li>
+                                    <li><a class="dropdown-item" href="#development-agenda" style="color: var(--text-dark);">Development Agenda</a></li>
+                                    <li><a class="dropdown-item" href="#gov-chart" style="color: var(--text-dark);">Organizational Chart</a></li>
+                                </ul>
+                            </li>
+                            
+                            
+                            <div class="dropdown">
+                                <a class="nav-link dropdown-toggle" href="services-page/service.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
+
+                                <ul class="dropdown-menu"
+                                    style="background-color: var(--primary-bg); border: 1px solid var(--primary-color);">
+                                    <li><a class="dropdown-item" href="services-page/service.html"
+                                            style="color: var(--text-dark); transition: background-color var(--transition-fast);">Notice
+                                            of
+                                            Payment</a></li>
+                                    <li><a class="dropdown-item" href="#"
+                                            style="color: var(--text-dark); transition: background-color var(--transition-fast);">Business
+                                            Permit/
+                                            Online Application</a></li>
+                                    <li><a class="dropdown-item" href="#"
+                                            style="color: var(--text-dark); transition: background-color var(--transition-fast);">Building
+                                            Permit</a></li>
+                                    <li><a class="dropdown-item" href="#"
+                                            style="color: var(--text-dark); transition: background-color var(--transition-fast);">Tax
+                                            Declaration</a></li>
+                                    <li><a class="dropdown-item" href="#"
+                                            style="color: var(--text-dark); transition: background-color var(--transition-fast);">Fencing
+                                            Permit</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"
+                                            style="color: var(--text-dark); transition: background-color var(--transition-fast);">Popcom</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"
+                                            style="color: var(--text-dark); transition: background-color var(--transition-fast);">Postal</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"
+                                            style="color: var(--text-dark); transition: background-color var(--transition-fast);">NBI</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"
+                                            style="color: var(--text-dark); transition: background-color var(--transition-fast);">Veterinary</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"
+                                            style="color: var(--text-dark); transition: background-color var(--transition-fast);">BTMO</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"
+                                            style="color: var(--text-dark); transition: background-color var(--transition-fast);">Civil
+                                            Registrar</a></li>
+                                </ul>
+                            </div>
+                            <li class="nav-item"><a href="transparency.html" class="nav-link">Transparency</a>
+                            </li>
+                            <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+                            <li class="nav-item"><a href="contact-us.html" class="nav-link">Contact
+                                    Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- About Start -->
+        <section>
+            <div class="container-fluid about py-5">
+                <div class="container py-5">
+                    <div class="row g-5">
+                        <!-- Adjusted column width -->
+                        <div class="col-xl-6"> <!-- Changed from col-xl-5 to col-xl-6 -->
+                            <div class="h-100 custom custom-img-container">
+                                <img src="a7f9833e-f9fe-4782-94de-8ba3558521fe.jpg" class="img-fluid w-100 h-100" alt="Image">
+                            </div>
+                        </div>
+                        <div class="col-xl-6"> <!-- Adjusted to maintain balance -->
+                            <h5 class="text-uppercase">About Us</h5>
+                            <h1 class="mb-4" style="color: var(--primary-color);">Our Commitment to Sustainable
+                                Development</h1>
+                            <p class="fs-5 mb-4">Nestled in the northern part of Cebu, Bogo City is a vibrant community
+                                dedicated to preserving its natural beauty,
+                                promoting sustainable agriculture, and protecting the rich marine ecosystem that
+                                surrounds
+                                our coastal municipality.>
+                            </p>
+                            <div class="tab-class about-us-container p-4">
+                                <ul class="nav d-flex mb-2">
+                                    <li class="nav-item mb-3">
+                                        <a class="d-flex py-2 text-center bg-white active" data-bs-toggle="pill" href="#tab-1">
+                                            <span class="text-dark" style="width: 150px;">About</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item mb-3">
+                                        <a class="d-flex py-2 mx-3 text-center bg-white" data-bs-toggle="pill" href="#tab-2">
+                                            <span class="text-dark" style="width: 150px;">Vision</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item mb-3">
+                                        <a class="d-flex py-2 text-center bg-white" data-bs-toggle="pill" href="#tab-3">
+                                            <span class="text-dark" style="width: 150px;">Mission</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                
+                                <div class="tab-content">
+                                    <!-- About Tab -->
+                                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="d-flex">
+                                                    <div class="text-start my-auto">
+                                                        <h5 class="text-uppercase mb-3" style="color: var(--primary-color);">Our City</h5>
+                                                        <p class="mb-4" style="text-align: center; font-size: 18px; font-weight: 500; line-height: 1.6; color: #333;">Bogo – derived its name from a lone bogo tree or Garuda floribunda, which stood on the shore where Bogo wharf is now. Under its spreading shade, natives and incoming traders in sailboats loaded with goods barter each others products. Thus, the spot became a hub for traders and merchants as well as for nature lovers. Some of these traders stayed and married locals of the place. 
+                                                        Today the City of Bogo stoods as a fast growing City in the north of Cebu. Although known for its sugarcane production and fishery, the City has been open to commercial establishments catering the needs and wants of the locals and visitors. The progressing City continues to excel, continuously developing business infrastructures for livelihood and liesure sites for tourism. As a lumad na Bogohanon would say, “Padayon Bogo!”</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Vision Tab -->
+                                    <div id="tab-2" class="tab-pane fade show p-0">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="d-flex">
+                                                    <div class="text-start my-auto">
+                                                        <h5 class="text-uppercase mb-3" style="color: var(--primary-color);">Our Vision</h5>
+                                                        <p class="mb-4" style="text-align: center; font-size: 18px; font-weight: 500; line-height: 1.6; color: #333;">The City of Bogo shall be the environmentally sound premiere center of trade and industry in the Visayas, propelled by a globally competitive, empowered and self-reliant citizenry led by enlightened, dedicated and innovative leaders committed to deliver quality infrastructure and social services to achieve sustainable growth and development.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Mission Tab -->
+                                    <div id="tab-3" class="tab-pane fade show p-0">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="d-flex">
+                                                    <div class="text-start my-auto">
+                                                        <div id="mission">
+                                                        <h5 class="text-uppercase mb-3" style="color: var(--primary-color);">Our Mission</h5>
+                                                        <div class="centered-content">
+                                                            <p class="mb-4">
+                                                                <strong>Economic</strong><br>
+                                                                To provide an opportunity for a diversified, strong, and vibrant economy geared towards enhancing the local competitiveness at the same time creating an enabling environment for investment and ensuring food security.
+                                                            </p>
+                                                            <p class="mb-4">
+                                                                <strong>Administrative</strong><br>
+                                                                To ensure that laws, ordinances, and policies promulgated by the national government or the city are faithfully implemented for the betterment of the Bogohanons.
+                                                            </p>
+                                                            <p class="mb-4">
+                                                                <strong>Social Factor</strong><br>
+                                                                Provide the marginalized sectors education, livelihood, medical and social welfare services, adequate housing to improve their well-being, ensure access to economic opportunities, and live in a safe, secure, and orderly community.
+                                                            </p>
+                                                            <p class="mb-4">
+                                                                <strong>Infrastructure</strong><br>
+                                                                To provide the City of Bogo with resilient, relevant, and efficient infrastructure support facilities and utilities to achieve competitive advantage within the framework of sustainable development.
+                                                            </p>
+                                                            <p class="mb-4">
+                                                                <strong>Environment</strong><br>
+                                                                To encourage and educate the Bogohanons to love, protect, preserve, and properly manage its natural resources to attain ecological balance and environmental integrity.
+                                                            </p>
+                                                        </div>
+                                                        </div>
+                                                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="development-agenda" class="py-5">
+            <div class="container">
+                <h2 class="text-center text-uppercase mb-4" style="color: var(--primary-color); font-weight: 700">Development Agenda</h2>
+                <h2 class="text-center text-uppercase mb-4" style="color: var(--primary-color); font-weight: 500">12-Point Agenda</h2>
+                
+                <p class="fs-5 mb-4 text-center">
+                    The City of Bogo is committed to achieving sustainable development through its comprehensive Development Agenda that focuses on key areas of growth and progress. Below are the main areas of focus in our development plan.
+                </p>
+                
+                <div class="row">
+                    <!-- Economic Development -->
+                    <div class="col-lg-4 mb-4">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h4 class="card-title text-uppercase" style="color: var(--primary-color);">Enhancement of the Delivery of Basic Services</h4>
+                                <p class="card-text">
+                                    This is going to be achieved primarily through the distribution of more benefits to the following sectors: Senior Citizens; Persons with Disabilities; Women and Children; Members of the Lesbians, Gay, Bisexual and Transgenders; and other marginalized groups.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Infrastructure Development -->
+                    <div class="col-lg-4 mb-4">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h4 class="card-title text-uppercase" style="color: var(--primary-color);">Economic Development</h4>
+                                <p class="card-text">
+                                    This will be achieved by taking advantage of Bogo’s being the hub of trade and commerce in the north. This would mean developing the Polambato Port’s full potential as gateway to the country’s nautical highway, dovetailed with giving serious attention to the development of the New Business District as center of non-traditional business activities.                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Environmental Management -->
+                    <div class="col-lg-4 mb-4">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h4 class="card-title text-uppercase" style="color: var(--primary-color);">Infrastructure Development.</h4>
+                                <p class="card-text">
+                                    Being s young city, infrastructure shall be our main backbone of development: building of new water and electrical systems to far-flung sitios, street lighting, repair and opening of new roads, establishing an activity center where city programs and events can be hosted, etc. Likewise, due to my past work as Deputy Commissioner of the National Telecommunications, I know the importance of internet services to a developing city. Thus connectivity is a must and this will be done by making Bogo the true I.T. Hub of northern Cebu.                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <!-- Social Development -->
+                    <div class="col-lg-4 mb-4">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h4 class="card-title text-uppercase" style="color: var(--primary-color);">Transparency and Accountability.</h4>
+                                <p class="card-text">
+                                    A new Public Information Office that would disseminate information down to the barangay level to promote transparency and encourage public participation shall be created. All Department Heads are also hereby ordered to submit monthly reports of their accomplishments.                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Administrative Development -->
+                    <div class="col-lg-4 mb-4">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h4 class="card-title text-uppercase" style="color: var(--primary-color);">Food Security</h4>
+                                <p class="card-text">
+                                    This will be achieved by increasing support to the endeavors of our farmers and fisher folks, improving the San Antonio Livestock Market, promoting the production of non-tradotional crops, and promoting activities that will give added value to our crops.                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Governance and Leadership -->
+                    <div class="col-lg-4 mb-4">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h4 class="card-title text-uppercase" style="color: var(--primary-color);">Tourism Development</h4>
+                                <p class="card-text">
+                                    Rehabilitation of Capitancillo Islet and the establishment of a Tourism/Pasalubong Center and Information Help Desk are among the priorities along this line.                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-4">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h4 class="card-title text-uppercase" style="color: var(--primary-color);">Peace and Order</h4>
+                                <p class="card-text">
+                                    With the policy of Zero Illegal Drugs Tolerance, three police substations in the key areas shall be established. Police communications, mobility and response capabilities shall also be enhanced.                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-4">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h4 class="card-title text-uppercase" style="color: var(--primary-color);">Health Services</h4>
+                                <p class="card-text">
+                                    With the planned renovation/construction of the Cebu Provincial Hospital-Bogo City, negotiations shall be made for its transfer of control and supervision to the City Government.                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-4">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h4 class="card-title text-uppercase" style="color: var(--primary-color);">Socialized Housing</h4>
+                                <p class="card-text">
+                                    A revitalized housing program shall be instituted, giving emphasis to providing informal settlers in danger zones and victims of calamities and natural disaster.                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-4">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h4 class="card-title text-uppercase" style="color: var(--primary-color);">Administrative Efficiency</h4>
+                                <p class="card-text">
+                                    A culture of professionalism among City Government employees shall be promoted, creating for the deserving, a system of rewards that value merit and organizational loyalty.                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-4">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h4 class="card-title text-uppercase" style="color: var(--primary-color);">Disaster Resiliency</h4>
+                                <p class="card-text">
+                                    The City shall continue to support the on-going work on the Command Center for Disaster Response and Preparedness at the City Hall.                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-4">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h4 class="card-title text-uppercase" style="color: var(--primary-color);">Environment Protection and Rehabilitation</h4>
+                                <p class="card-text">
+                                    The city shall intensify its reforestation program both for the shorelines and the upland areas, provide stiffer penalties for illegal tree cutters, and intensify its solid waste management efforts – including its efforts on waste segregation.                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        <section class="government-employees py-5" id="gov-chart">
+            <div class="container">
+                <h2 class="text-center mb-5" style="color: var(--primary-color); font-weight: 700;">ORGANIZATIONAL CHART</h2>
+                
+                <!-- City Mayor -->
+                <div class="row justify-content-center mb-4">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card text-center">
+                            <img src="mayor.jpg" class="card-img-top img-fluid" alt="City Mayor">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: var(--primary-color);">City Mayor</h5>
+                                <p class="card-text">HON. CARLO JOSE ASAS MARTINEZ</p>
+                                <p class="card-text">SERVICE RECORD: Lawyer (2005)
+                                    Deputy Commissioner (2011 – 2015)
+                                    National Telecommunications Commision</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Vice Mayor -->
+                <div class="row justify-content-center mb-4">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card text-center">
+                            <img src="vice.png" class="card-img-top img-fluid" alt="Vice Mayor">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: var(--primary-color);">Vice Mayor</h5>
+                                <p class="card-text">Hon. Maria Cielo Asas Martinez</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Councilors -->
+                <div class="row text-center">
+                    <!-- Loop through 12 councilors -->
+                    <!-- Councilor 1 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <img src="councilor.png" class="card-img-top img-fluid" alt="Councilor 1">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: var(--primary-color);">Councilor</h5>
+                                <p class="card-text">Hon. Erwin P. Rosal</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Duplicate for each councilor -->
+                    <!-- Councilor 2 -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <img src="councilor2.png" class="card-img-top img-fluid" alt="Councilor 2">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: var(--primary-color);">Councilor</h5>
+                                <p class="card-text">Hon. Luis A. Asierto Jr.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <img src="councilor3.png" class="card-img-top img-fluid" alt="Councilor 2">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: var(--primary-color);">Councilor</h5>
+                                <p class="card-text">Hon. Ethel A. Gulane</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <img src="councilor4.png" class="card-img-top img-fluid" alt="Councilor 2">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: var(--primary-color);">Councilor</h5>
+                                <p class="card-text">Hon. Romeo B. Alarde Jr.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <img src="councilor5.png" class="card-img-top img-fluid" alt="Councilor 2">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: var(--primary-color);">Councilor</h5>
+                                <p class="card-text">Hon. Alexie Ramil Sevilla</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <img src="councilor6.png" class="card-img-top img-fluid" alt="Councilor 2">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: var(--primary-color);">Councilor</h5>
+                                <p class="card-text">Hon. Domingo P. Armenton</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <img src="councilor7.png" class="card-img-top img-fluid" alt="Councilor 2">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: var(--primary-color);">Councilor</h5>
+                                <p class="card-text">Hon. Vivian M. Canama</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <img src="councilor8.png" class="card-img-top img-fluid" alt="Councilor 2">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: var(--primary-color);">Councilor</h5>
+                                <p class="card-text">Hon. Noel Sevilla Seno</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <img src="councilor9.png" class="card-img-top img-fluid" alt="Councilor 2">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: var(--primary-color);">Councilor</h5>
+                                <p class="card-text">Hon. Santiago M. Oliamot/p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <img src="councilor10.png" class="card-img-top img-fluid" alt="Councilor 2">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: var(--primary-color);">Councilor</h5>
+                                <p class="card-text">Hon. Victor Elliot S. Lepiten III</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <img src="abc.png" class="card-img-top img-fluid" alt="Councilor 2">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: var(--primary-color);">ABC PRESIDENT</h5>
+                                <p class="card-text">Hon. Emily J. Juanillo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card text-center">
+                            <img src="sk.png" class="card-img-top img-fluid" alt="Councilor 2">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: var(--primary-color);">SK PRESIDENT</h5>
+                                <p class="card-text">Hon. Ma. Nevhell Francisco</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Repeat for all 12 councilors -->
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- About End -->
+
+    </main>
+
+    <footer>
+        <div id="gwt-standard-footer"></div>
+        <script type="text/javascript">
+            (function (d, s, id) {
+                var js, gjs = d.getElementById('gwt-standard-footer');
+
+                js = d.createElement(s); js.id = id;
+                js.src = "//gwhs.i.gov.ph/gwt-footer/footer.js";
+                gjs.parentNode.insertBefore(js, gjs);
+            }(document, 'script', 'gwt-footer-jsdk'));
+        </script>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/navbar.js" defer></script>
+</body>
+
+</html>
